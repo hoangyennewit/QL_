@@ -126,9 +126,12 @@ int main() {
     LinkedList L1, L2;
     init(L1); 
     init(L2);
+    cout << "Danh sách L1:";
     L1.display();
+    cout << "Danh sách L2:";
     L2.display();
     LinkedList L3 = L1.subList(L1, L2);
+    cout << "Danh sách L3:";
     L3.display();
     return 0;
 }
