@@ -101,10 +101,22 @@ public:
         }
         return L3;
     }
-
+/*
     void display() {
         for (Node* p = pNode; p != NULL; p = p->next) {
             cout << p->data << ' ';
+        }
+        cout << '\n';
+    }
+*/
+    void display(){
+        Node * p = pNode;
+        while(p != NULL){
+            cout << p->data;
+            if (p -> next != NULL){
+                cout << " ";
+            }
+            p = p->next;
         }
         cout << '\n';
     }
